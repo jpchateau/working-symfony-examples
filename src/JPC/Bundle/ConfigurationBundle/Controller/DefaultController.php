@@ -8,6 +8,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('JPCConfigurationBundle:Default:index.html.twig', array());
+        dump($this->getParameter('jpc_configuration'));
+
+        return $this->render('JPCConfigurationBundle:Default:index.html.twig', []);
     }
 }
